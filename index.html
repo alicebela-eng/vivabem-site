@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <header id="topo">
+    <title>VivaBem Medicina Integrada</title>
+    </header>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+        header { background: #f4f4f4; padding: 20px; text-align: center; border-bottom: 2px solid #ddd; }
+        nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 10px; background: #fff; }
+        nav a { text-decoration: none; color: #0056b3; font-weight: bold; }
+        .hero { padding: 40px 20px; text-align: center; background-color: #e9f5ff; }
+        .hero img { width: 100%; max-width: 600px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .container { width: 85%; margin: auto; overflow: hidden; padding: 20px; }
+        section { margin-bottom: 50px; }
+        h1, h2, h3 { color: #0056b3; }
+        
+        .equipe-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; margin-top: 30px; }
+        .card { border: 1px solid #eee; padding: 20px; border-radius: 12px; background: #fff; text-align: center; transition: 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .card img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 3px solid #0056b3; }
+        
+        .exames-lista { display: flex; flex-wrap: wrap; gap: 40px; }
+        form { display: flex; flex-direction: column; max-width: 500px; margin: auto; text-align: left; }
+        form input, form textarea { margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #0056b3; color: white; padding: 12px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: bold; }
+        footer { text-align: center; padding: 20px; font-size: 0.8em; color: #777; border-top: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+
+<header style="display: flex; align-items: center; justify-content: center; gap: 20px; padding: 20px; background: #f4f4f4; border-bottom: 2px solid #ddd;">
+    <img src="img/logo.png" alt="Logo VivaBem" style="height: 60px; width: auto;">
+    
+    <div style="text-align: left;">
+        <h1 style="margin: 0; color: #0056b3;">VivaBem Medicina Integrada</h1>
+        <h2 style="margin: 0; font-size: 1.1em; color: #555;">Aqui sua saúde é nossa prioridade</h2>
+    </div>
+</header>
+
+<nav>
+    <a href="#clinica">Conheça a Clínica</a>
+    <a href="#equipe">Nossa Equipe</a>
+    <a href="#exames">Exames</a>
+    <a href="#serviços">Serviços</a>
+    <a href="#contato">Entre em Contato</a>
+    <a href="https://wa.me/551140200057?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20na%20VivaBem." 
+   target="_blank" 
+   style="color: #ffffff; background-color: #219c36; padding: 5px 10px; border-radius: 5px; border: 1px solid #219c36;">
+   Marque sua consulta!
+</a>
+</nav>
+
+<section class="hero" id="clinica">
+    <div class="container">
+        
+        <img src="img/atendimento-medico.jpeg" alt="Médica realizando consulta com paciente">
+        <h3>A Clínica VivaBem é uma instituição de saúde integrada, focada no bem-estar como um todo dos pacientes.</h3>
+        <p>Aqui, a abordagem multidisciplinar é essencial, combinando várias áreas da medicina para proporcionar um tratamento mais completo e personalizado.</p>
+    </div>
+</section>
+
+<section id="equipe" class="container">
+    <h2>Nossa Equipe</h2>
+    <p>Conheça nossa equipe que é formada por profissionais altamente qualificados, que trabalham juntos para garantir que as necessidades físicas, emocionais e mentais dos pacientes sejam atendidas.</p>
+    
+    <div class="equipe-grid">
+        <div class="card">
+            <img src="img/dr-pedro-sampaio.jpg" alt="Dr. Pedro Sampaio">
+            <br><strong>Dr. Pedro Sampaio</strong><br>Cardiologista
+        </div>
+        <div class="card">
+            <img src="img/dra-marisa-monte.jpg" alt="Dra. Marisa Monte">
+            <br><strong>Dra. Marisa Monte</strong><br>Psicóloga
+        </div>
+        <div class="card">
+            <img src="img/dra-marina-sena.jpeg" alt="Dra. Marina Senna">
+            <br><strong>Dra. Marina Senna</strong><br>Psiquiatra
+        </div>
+        <div class="card">
+            <img src="img/dr-bruno-mars.jpg" alt="Dr. Bruno Mars">
+            <br><strong>Dr. Bruno Mars</strong><br>Nutricionista
+        </div>
+        <div class="card">
+            <img src="img/dr-joao-gomes.jpg" alt="Dr. João Gomes">
+            <br><strong>Dr. João Gomes</strong><br>Clínico Geral
+        </div>
+        <div class="card">
+            <img src="img/dra-julia-costa.jpg" alt="Dra. Júlia Costa">
+            <br><strong>Dra. Júlia Costa</strong><br>Nutróloga
+        </div>
+        <div class="card">
+            <img src="img/dra-ana-vitoria.jpg" alt="Dra. Ana Vitória">
+            <br><strong>Dra. Ana Vitória</strong><br>Dermatologista
+        </div>
+        <div class="card">
+            <img src="img/dr-leo-santana.jpg" alt="Dr. Léo Santana">
+            <br><strong>Dr. Léo Santana</strong><br>Endocrinologista
+        </div>
+    </div>
+</section>
+
+<section id="exames" class="container" style="background: #f9f9f9;">
+    <h2>Exames</h2>
+    <p>Na nossa clínica, além de oferecermos consultas especializadas, realizamos uma ampla gama de exames com tecnologia de ponta.</p>
+    <div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 30px; flex-wrap: wrap;">
+        <img src="img/exame-sangue.jpg" alt="Exames de sangue" style="width: 100%; max-width: 450px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        
+        <img src="img/exame-imagem.jpg" alt="Exames de imagem" style="width: 100%; max-width: 450px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </div>
+    <div class="exames-lista">
+        <div>
+            <h3>Exames Laboratoriais</h3>
+            <ul>
+                <li><strong>Hemograma completo:</strong> Analisa glóbulos vermelhos, glóbulos brancos e plaquetas.</li>
+                <li><strong>Perfil lipídico:</strong> Mede níveis de colesterol e triglicerídeos.</li>
+                <li><strong>Glicemia em jejum:</strong> Verifica níveis de açúcar no sangue.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Exames de Imagem</h3>
+            <ul>
+                <li><strong>Ultrassonografia:</strong> Imagens dos órgãos internos por ondas sonoras.</li>
+                <li><strong>Tomografia computadorizada (TC):</strong> Imagens detalhadas para diagnósticos específicos.</li>
+                <li><strong>Ressonância magnética (RM):</strong> Exames detalhados para diagnósticos específicos.</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+<section id="serviços" class="container" style="background: #f9f9f9;">
+    <h2>Nossos Serviços de Bem-Estar</h2> 
+    <div class="grid-container">
+        <div class="card">
+            <img src="img/personal-trainer.jpg" alt="Personal Trainer">
+            <h3>Personal Trainer</h3>
+            <p>Foco no condicionamento físico e saúde cardiovascular.</p>
+        </div>
+        <div class="card">
+            <img src="img/fisioterapia.jpg" alt="Fisioterapia">
+            <h3>Fisioterapia</h3>
+            <p>Reabilitação e cuidado com o movimento.</p>
+        </div>
+        <div class="card">
+            <img src="img/meditação.jpg" alt="Grupos de Meditação">
+            <h3>Meditação</h3>
+            <p>Equilíbrio mental e redução do estresse.</p>
+        </div>
+    </div>
+</section>
+    </div>
+
+</section>
+<section id="contato" class="container">
+    <h2>Entre em contato</h2>
+    <form>
+        <label>Seu nome*</label>
+        <input type="text" required>
+        <label>Seu email*</label>
+        <input type="email" required>
+        <label>Cidade e estado*</label>
+        <input type="text" required>
+        <label>Tem alguma dúvida?</label>
+        <textarea rows="4"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+
+
+<footer>
+    <a href="#topo" class="botao-topo">Voltar ao Topo</a>
+</footer>
+</body>
+</html>
